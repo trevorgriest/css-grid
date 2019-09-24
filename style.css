@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    margin: 2rem auto 2rem auto;
+        grid-template-columns: repeat(5, 32rem);
+        grid-gap: 1rem 1.5rem;
+        grid-template-rows: repeat(2, 14rem) 5rem;
+    width: 62rem;
+ }
+
+ :root {
+    --light: rgb(243, 9, 9);
+    --dark: rgb(1, 66, 12);
+}
+
+.grid-item-1{
+    grid-column-start: -1;
+    grid-column-end: -1;
+}
+.grid-item:nth-child(even) {
+    background-color: var(--dark);
+    color: var(--light);        
+}
+
+.grid-item:nth-child(odd) {
+    background-color: var(--light);
+    color: var(--dark);
+}
